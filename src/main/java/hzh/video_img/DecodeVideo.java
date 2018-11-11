@@ -16,6 +16,7 @@ import java.io.IOException;
 public class DecodeVideo {
 
 private static Logger logger = Logger.getLogger(DecodeVideo.class);
+
     public static void main(String[] args) {
         System.loadLibrary("opencv_ffmpeg341_64");
         // 加载本地的OpenCV库，这样就可以用它来调用Java API
@@ -26,7 +27,13 @@ private static Logger logger = Logger.getLogger(DecodeVideo.class);
     public static void run2() {
         // 读取视频文件
         Resource resource = new ClassPathResource("video/rotate_19.mp4");
-        String savePath = "F:\\videoimg\\";
+        ClassPathResource classPathResource = new ClassPathResource("videoimg");
+        String savePath = null;
+        try {
+            savePath = classPathResource.getFile().getPath();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         String filePath = "";
         try {
             filePath = resource.getFile().getAbsolutePath();
@@ -56,9 +63,9 @@ private static Logger logger = Logger.getLogger(DecodeVideo.class);
                 cap.set(opencv_highgui.CV_CAP_PROP_POS_MSEC, i *(int)(1000/fps));
                 // 读取下一帧画面
                 if (cap.read(frame)) {
-                    System.out.println("正在保存");
+                    System.out.println("正在保存第"+i+"帧");
                     // 保存画面到本地目录
-                    Imgcodecs.imwrite(savePath + i + ".jpg", frame);
+                    Imgcodecs.imwrite(savePath+"\\" + i + ".jpg", frame);
                 }
             }
             // 关闭视频文件

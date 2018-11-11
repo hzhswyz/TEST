@@ -11,6 +11,7 @@ import org.jim2mov.core.Jim2Mov;
 import org.jim2mov.core.MovieInfoProvider;
 import org.jim2mov.core.MovieSaveException;
 import org.jim2mov.utils.MovieUtils;
+import org.springframework.core.io.ClassPathResource;
 
 /**
  * 图片与视频转换工具类
@@ -27,7 +28,7 @@ public class MakeVideo {
      * @param mHeight 视频的高度
      */
     public static void convertPicToAvi(String jpgDirPath, String aviFileName, int fps, int mWidth, int mHeight) {
-        // jpgs放置jpg图片,图片文件名为(1.jpg,2.jpg...)
+        // jpgs放置jpg图片,图片文件名为(0.jpg,2.jpg...)
         final File[] jpgs = new File(jpgDirPath).listFiles();
         if(jpgs==null || jpgs.length==0){
             return;
@@ -74,7 +75,15 @@ public class MakeVideo {
      */
     public static void main(String[] args) {
         // jpg文件夹路径
-        String jpgDirPath = "F:\\videoimg";
+        ClassPathResource classPathResource = new ClassPathResource("videoimg");
+        String savePath = null;
+        try {
+            savePath = classPathResource.getFile().getPath();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println(savePath);
+        String jpgDirPath = savePath;
         // 生成的avi视频文件名（生成路径为本工程）
         String aviFileName = "test.avi";
         int fps = 30; // 每秒播放的帧数
