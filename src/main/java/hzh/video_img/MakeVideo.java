@@ -65,7 +65,6 @@ public class MakeVideo {
         } catch (MovieSaveException e) {
             System.err.println(e);
         }
-
         System.out.println("create avi success.");
     }
 

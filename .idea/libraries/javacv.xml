@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="lib">
+  <library name="javacv">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/src/main/resources/lib" />
     </CLASSES>

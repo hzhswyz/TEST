@@ -1,6 +1,7 @@
 package hzh.web.controller;
 
 
+import hzh.withpython.Receiveimg;
 import hzh.withpython.SendImgInfo;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
@@ -28,6 +29,16 @@ public class MainController {
                 e.printStackTrace();
             }
             return "index";
+        }
+        return "index";
+    }
+
+    @RequestMapping("/receive")
+    public String receiveimg()  {
+        try {
+            Receiveimg.receiveimg();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         return "index";
     }
