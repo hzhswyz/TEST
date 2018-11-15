@@ -44,8 +44,10 @@ public class MainController {
     }
 
     @RequestMapping("testparameterresolver")
-    public String testparameterresolver(String name){
+    public String testparameterresolver(String name) throws Exception {
         logger.debug(name);
+        if(true)
+        throw new Exception("");
         return "testparameterresolver";
     }
 }

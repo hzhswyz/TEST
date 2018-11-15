@@ -4,6 +4,7 @@ public class ImgInfo {
     private int width;
     private int height;
     private int length;
+    private int id;
 
     public int getWidth() {
         return width;
@@ -28,4 +29,13 @@ public class ImgInfo {
     public void setLength(int length) {
         this.length = length;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 }
