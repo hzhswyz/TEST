@@ -21,7 +21,6 @@
         <servlet-name>hzh</servlet-name>
         <url-pattern>/hzh/*</url-pattern>
     </servlet-mapping>
-
     <error-page>
         <error-code>500</error-code>
         <location>/static/errorpage/500/index.html</location>

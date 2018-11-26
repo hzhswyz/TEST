@@ -7,6 +7,10 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.context.support.XmlWebApplicationContext;
+
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/Main")
@@ -44,10 +48,15 @@ public class MainController {
     }
 
     @RequestMapping("testparameterresolver")
-    public String testparameterresolver(String name) throws Exception {
+    public String testparameterresolver(HttpSession session, String name) throws Exception {
         logger.debug(name);
+        logger.debug(System.getProperty("java.ext.dirs"));
+        logger.debug(System.getProperty("java.class.path"));
+        Class typeLoaded = Class.forName("java.lang.String");
+        logger.debug(typeLoaded.getClassLoader());
         if(true)
         throw new Exception("");
         return "testparameterresolver";
     }
+
 }

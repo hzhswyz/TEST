@@ -94,8 +94,8 @@
 	p:contentType="application/xml;charset=gbk"
 	p:modelKey="pageList" p:marshaller-ref="xmlMarshaller" />
 
-	<bean id="pageListJson" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"
-		  p:modelKey="pageList"/>
+	<bean id="contentJson" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView"
+		  p:modelKey="content"/>
 
 	<bean id="judgeSuccessAjaxXml" class="org.springframework.web.servlet.view.xml.MarshallingView"
 		  p:contentType="application/xml;charset=gbk"
