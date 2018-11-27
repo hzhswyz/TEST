@@ -7,13 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df4d22dd-b9cc-45f1-b253-8eabbfd23bba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hzh/skating/RequestModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hzh/web/controller/SkatingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Idea_Web_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Idea_Web_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hzh/video_img/DecodeVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hzh/video_imgtools/DecodeVideo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hzh/video_img/MakeVideo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hzh/video_imgtools/MakeVideo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hzh/web/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hzh/web/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hzh/web/httpbean/RemoteAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hzh/web/controller/SkatingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hzh/web/controller/SkatingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hzh/web/httpbean/ConnectResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hzh/web/httpbean/ConnectResponse.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,10 +23,11 @@
     <session id="-1176645099">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="4" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -39,7 +36,7 @@
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="14" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -100,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hzh/web/controller/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="23" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="300">
+              <caret line="23" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="e#626#627#0" expanded="true" />
                 <element signature="e#656#657#0" expanded="true" />
@@ -114,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/hzh/web/controller/SkatingController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="350">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -247,6 +244,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -323,8 +322,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -561,6 +558,7 @@
       <workItem from="1542778238360" duration="3000" />
       <workItem from="1542961499511" duration="380000" />
       <workItem from="1542963042789" duration="804000" />
+      <workItem from="1543303221781" duration="4000" />
     </task>
     <task id="LOCAL-00001" summary="上传项目">
       <created>1541759370704</created>
@@ -594,7 +592,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104768000" />
+    <option name="totallyTimeSpent" value="104772000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -608,7 +606,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24520256" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24786781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1177,8 +1175,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/hzh/web/controller/skating.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/hzh/web/controller/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="300">
+          <caret line="23" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="e#626#627#0" expanded="true" />
             <element signature="e#656#657#0" expanded="true" />
@@ -1189,7 +1187,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/hzh/web/controller/SkatingController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
